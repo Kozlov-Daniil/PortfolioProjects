@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat: 200, 300, 300i, 400, 700&display=swap">
     <title>Portfolio</title>
 </head>
-<body>
+<body class="no-scroll">
 <!-- Header -->
     <header class="header">
         <div class="container">
@@ -348,6 +348,49 @@
             </div>
         </div>
      </footer>
+
+
+     <!-- Modals -->
+     <div class="modal">
+        <div class="modal__dialog">
+
+            <button class="modal__close" type="button">
+                <img class="modal__close-img" src="images/kres.png" alt="Close">
+            </button>
+
+            <div class="modal-work">
+                <div class="modal-work__preview">
+                    <img class="modal-work__photo" src="http://placekitten.com/790/780" alt="">
+                </div>
+                <div class="modal-work__content">
+
+                    <div class="modal-work__header">
+                        <h3 class="modal-work__title">Projects title</h3>
+                        <div class="modal-work__info">
+                            category <span class="modal-work__info-divider">|</span> 2022
+                        </div>
+                    </div>
+
+                    <div class="modal-work__client">
+                        <div class="modal-work__client-title">Client:</div>
+                        <div class="modal-work__client-company">Creative Agency</div>
+                    </div>
+
+                    <div class="modal-work__text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum commodi iste, ratione quam aliquam modi, eius exercitationem sint voluptatibus quae est, natus necessitatibus voluptatem et nam quo quasi vel? Ipsum!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum commodi iste, ratione quam aliquam modi, eius exercitationem sint voluptatibus quae est, natus necessitatibus voluptatem et nam quo quasi vel? Ipsum!</p>
+                    </div>
+
+                    <div class="modal-work__footer">
+                        <button class="modal-work__btn modal-work__btn--prev" type="button"> <img src="images/arrow.png" height="11" alt=""> Previous</button>
+                        <button class="modal-work__btn modal-work__btn--next" type="button">Next <img class="modal-work__btn2" src="images/arrow.png" height="11" alt=""> </button>
+                    </div>
+ 
+                </div> <!--/ Modal-work__content-->
+            </div> <!--/ Modal work-->
+
+        </div> <!--/ Modal dialog-->
+     </div><!--/ Modal-->
 
 
     

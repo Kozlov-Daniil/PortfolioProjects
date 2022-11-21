@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat: 200, 300, 300i, 400, 700&display=swap">
     <title>Portfolio</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
-<body class="no-scroll">
+<body >
 <!-- Header -->
     <header class="header">
         <div class="container">
@@ -80,19 +81,19 @@
     <div class="works">
         <div class="container">
             <div class="works__nav">
-                <a class="works__nav-link" href="">All</a>
-                <a class="works__nav-link" href="">App</a>
-                <a class="works__nav-link" href="">Websites</a>
-                <a class="works__nav-link" href="">Interaction</a>
+                <a class="works__nav-link" href="#" data-filter="all">All</a>
+                <a class="works__nav-link" href="#" data-filter="app">App</a>
+                <a class="works__nav-link" href="#" data-filter="website">Websites</a>
+                <a class="works__nav-link" href="#" data-filter="interaction">Interaction</a>
             </div>
 
-            <div class="portfolio">
-                <div class="portfolio__col">
+            <div class="portfolio" id="portfolio">
+                <div class="portfolio__col" data-cat="app">
                     <div class="work">
                         <img class="work__image" src="http://placekitten.com/370/300" alt="">
                         <div class="work__content">
                             <div class="work__cat">
-                                Category
+                                Category: app
                             </div>
                             <div class="work__title">
                                 Project title
@@ -102,12 +103,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="portfolio__col">
+                <div class="portfolio__col" data-cat="website">
                     <div class="work">
                         <img class="work__image" src="http://placekitten.com/370/300" alt="">
                         <div class="work__content">
                             <div class="work__cat">
-                                Category
+                                Category: website
                             </div>
                             <div class="work__title">
                                 Project title
@@ -117,12 +118,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="portfolio__col">
+                <div class="portfolio__col" data-cat="interaction">
                     <div class="work">
                         <img class="work__image" src="http://placekitten.com/370/300" alt="">
                         <div class="work__content">
                             <div class="work__cat">
-                                Category
+                                Category: interaction
                             </div>
                             <div class="work__title">
                                 Project title
@@ -132,12 +133,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="portfolio__col">
+                <div class="portfolio__col" data-cat="website">
                     <div class="work">
                         <img class="work__image" src="http://placekitten.com/370/300" alt="">
                         <div class="work__content">
                             <div class="work__cat">
-                                Category
+                                Category: website
                             </div>
                             <div class="work__title">
                                 Project title
@@ -147,12 +148,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="portfolio__col">
+                <div class="portfolio__col" data-cat="interaction">
                     <div class="work">
                         <img class="work__image" src="http://placekitten.com/370/300" alt="">
                         <div class="work__content">
                             <div class="work__cat">
-                                Category
+                                Category: interaction
                             </div>
                             <div class="work__title">
                                 Project title
@@ -162,12 +163,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="portfolio__col">
+                <div class="portfolio__col" data-cat="app">
                     <div class="work">
                         <img class="work__image" src="http://placekitten.com/370/300" alt="">
                         <div class="work__content">
                             <div class="work__cat">
-                                Category
+                                Category: app
                             </div>
                             <div class="work__title">
                                 Project title
@@ -518,7 +519,7 @@
         </div> <!--/ Modal dialog-->
      </div><!--/ Modal-->
 
-     <div class="modal">
+     <div class="modal" style="display:none ;">
         <div class="modal__dialog modal__dialog--sm">
 
             <button class="modal__close" type="button">
@@ -563,6 +564,8 @@
         </div> <!--/ Modal dialog-->
      </div><!--/ Modal-->
 
+<!-- JS -->
+<script src="js/app.js"></script>
 
     
 </body>

@@ -361,7 +361,14 @@
 
             <div class="modal-work">
                 <div class="modal-work__preview">
-                    <img class="modal-work__photo" src="http://placekitten.com/790/780" alt="">
+                    <div data-slider="slick">
+                        <div>
+                            <img class="modal-work__photo" src="http://placekitten.com/790/780" alt="">
+                        </div>
+                        <div>
+                            <img class="modal-work__photo" src="http://placehold.it/790x780/333" alt="">
+                        </div>
+                    </div>
                 </div>
                 <div class="modal-work__content">
 
@@ -383,8 +390,8 @@
                     </div>
 
                     <div class="modal-work__footer">
-                        <button class="modal-work__btn modal-work__btn--prev" type="button"> <img src="images/arrow.png" height="11" alt=""> Previous</button>
-                        <button class="modal-work__btn modal-work__btn--next" type="button">Next <img class="modal-work__btn2" src="images/arrow.png" height="11" alt=""> </button>
+                        <button class="modal-work__btn modal-work__btn--prev  slickPrev" type="button"> <img src="images/arrow.png" height="11" alt=""> Previous</button>
+                        <button class="modal-work__btn modal-work__btn--next  slickNext" type="button">Next <img class="modal-work__btn2" src="images/arrow.png" height="11" alt=""> </button>
                     </div>
  
                 </div> <!--/ Modal-work__content-->
@@ -565,6 +572,7 @@
      </div><!--/ Modal-->
 
 <!-- JS -->
+<script src="js/slick.min.js"></script>
 <script src="js/app.js"></script>
 
     

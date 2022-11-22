@@ -42,6 +42,8 @@ $(function(){
 
         $(modalId).addClass('show');
         $("body").addClass('no-scroll');
+
+        $('#worksSlider').slick('SetPosition');
     });
 
 
@@ -63,6 +65,32 @@ $(function(){
     $(".modal__dialog").on("click", function(event){
         event.stopPropagation();
     });
+
+
+    // Slider: https://kenwheeler.github.io/slick/
+    $('[data-slider="slick"]').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        fade: true,
+        arrows: false,
+        dots: true
+      });
+
+      $(".slickPrev").on("click", function(event){
+        event.preventDefault();
+
+        let currentSlider = $(this).parents('.modal').find('[data-slider="slick"]');
+
+        currentSlider.slick("slickPrev");
+      })
+
+      $(".slickNext").on("click", function(event){
+        event.preventDefault();
+        let currentSlider = $(this).parents('.modal').find('[data-slider="slick"]');
+
+        currentSlider.slick("slickNext");
+      })
 
 
 });
